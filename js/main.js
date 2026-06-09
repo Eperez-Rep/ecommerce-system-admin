@@ -738,7 +738,7 @@ document.addEventListener("DOMContentLoaded", function() {
    ADMIN PANEL
    ===================== */
 var SHEETDB_URL   = "https://sheetdb.io/api/v1/sxdks9p6lfh34";
-var ADMIN_PASS    = "banger2025";
+var ADMIN_PASS    = "BangerAdmin!";
 var MARCAS_OK     = ["VIVA LA HEMP","UNIVERSITY","TORCH","SLUGGERS","PULSE","PHENOM","ELF","AIRIS","PACKMAN","MUHAMEDS","JUNGLE BOYS","HALF BAKED","GHOST","DOZO","BIG CHIEF","BOUTIQUE"];
 var IMG_BASE      = "https://banger-web-xi.vercel.app/";
 
@@ -808,6 +808,7 @@ function adminAgregarProducto() {
   var genetica      = variedad ? variedad + (geneticaInput ? " — " + geneticaInput : "") : (geneticaInput || "");
   console.log("[ADMIN DEBUG] 1.select.value='" + selGenetica.value + "' | 2.variedad='" + variedad + "' | 3.geneticaInput='" + geneticaInput + "' | 4.payload geneticas='" + genetica + "'");
   var btn      = document.getElementById("admin-form-submit");
+  var msg      = document.getElementById("admin-msg");
   var file     = document.getElementById("adm-imagen").files[0];
 
   msg.style.display = "none";
